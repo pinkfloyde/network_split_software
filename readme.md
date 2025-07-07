@@ -1,0 +1,5 @@
+1. 概述
+该仿真器主要是进行量化后网络的数据生成，并进行网络拆分，将数据保存成txt文件，方便后续功能级仿真器和时钟精确级仿真器的使用和验证。
+2. utils
+其中utils文件包含了网络拆分需要使用的函数，包括tensor_output,tensor_split,in_feature_split,deep_feature_split,weight_split,bias_split等函数，用来进行张量拆分。
+而templete文件则提供了一套网络拆分的模板，包括onnx模型中节点的索引，导出输出数据，按照网络层进行存放。后续在进行网络拆分的时候可以进行参考。
