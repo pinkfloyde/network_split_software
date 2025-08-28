@@ -1,3 +1,6 @@
 output
 test_data
 Resnet20/data
+example/data
+test_data
+Yolov8n/data

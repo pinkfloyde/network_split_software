@@ -301,6 +301,3 @@ def bias_split(x: torch.Tensor, type: str, test_name: str, filename: str, cout_d
         tensor_output(x_split_cout, type, (0,),
                     test_name + '/' + filename + '_{}'.format(i))
 
-
-if __name__ == "__main__":
-    makeDir("./software/results/core_test_stop/stop.json")

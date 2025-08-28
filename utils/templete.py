@@ -16,7 +16,7 @@ logger = logging.getLogger("[ONNXOPTIMIZER]")
 import torchvision.models as models
 import torchvision.transforms as transforms
 from PIL import Image
-from utils import *
+from ..utils.utils import *
 
 def to_numpy(tensor):
     return tensor.detach().cpu().numpy() if tensor.requires_grad else tensor.cpu().numpy()
